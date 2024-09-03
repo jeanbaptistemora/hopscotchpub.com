@@ -328,14 +328,14 @@ img.emoji {
 							<div class="elementor-widget-wrap">
 						<div class="elementor-element elementor-element-ngmjzhe elementor-widget elementor-widget-heading" data-id="ngmjzhe" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h3 class="elementor-heading-title elementor-size-xxl">Finger food du soir</h3>		</div>
+			<h3 class="elementor-heading-title elementor-size-xxl" style="margin-top: 25px;">Finger food du soir</h3>		</div>
 				</div>
 				<div class="elementor-element elementor-element-pjesrne elementor-widget elementor-widget-text-editor" data-id="pjesrne" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 								<div class="elementor-text-editor elementor-clearfix">
-				<p>Boulettes de Haggis, Cheddar Sticks, Houmous et Tartinades, Fish &amp; Chips au Haddock fumé, Scotch eggs, Haggis Nachos, Poutine &amp; autres Corn Dogs&#8230;</p>
+				<p>Boulettes de Haggis, Cheddar Sticks, Houmous et Tartinades, Fish &amp; Chips au Haddock fumé, Mac & Chili Cheese, Bacon Nachos, Poutine &amp; autres Corn Dogs&#8230;</p>
 <p>Faits maison, à vous en lécher les doigts.</p>
-<p><strong>MARDI</strong> : Formule Burger &amp; Beer (menu unique à 15€, avec une recette unique chaque mardi ! Pensez à réserver !)</p>					</div>
+<p><strong>MARDI</strong> : Formule Burger &amp; Beer (menu unique à 16€, avec une recette unique chaque mardi ! Pensez à réserver !)</p>					</div>
 						</div>
 				</div>
 						</div>
@@ -399,6 +399,8 @@ img.emoji {
 				<div class="elementor-element elementor-element-ej8ui6y elementor-widget elementor-widget-text-editor" data-id="ej8ui6y" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 								<div class="elementor-text-editor elementor-clearfix">
+				<p>Shots</p>
+				<p>Happy Hour tous les jours de 17h30 à 19h00 (une sélection de pintes à 5€)</p>
 				<p>Gin &amp; Tonic workshop</p>
 <p>Classic whisky cocktails et autres créations</p>
 <p>Cidres</p>					</div>
@@ -456,9 +458,47 @@ img.emoji {
 				<div class="elementor-element elementor-element-thxgpxl elementor-widget elementor-widget-text-editor" data-id="thxgpxl" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 								<div class="elementor-text-editor elementor-clearfix">
-				<p>Nous ne prenons aucune réservation hors mardi (pour les burgers), pour toute question, n&rsquo;hésitez pas à nous contacter !</p>
-<h5><a href="mailto:contact@hopscotchpub.com">contact@hopscotchpub.com</a></h5>					</div>
+				<p>Pour toute demande de réservation de groupes, ou pour les mardis burgers, contactez-nous à l'adresse mail suivante ou remplissez le formulaire de réservation, nous vous recontacterons très rapidement !</p>
+<h5><a href="mailto:contact@hopscotchpub.com">contact@hopscotchpub.com</a></h5>	
+
+				</div>
+
+				<div id="submitted-confirmation" style="margin-top: 3em; color: green; font-weight: bold; background-color: wheat; padding: 10px; display: none;">
+					Votre message a bien été envoyé !
+				</div>
+
 						</div>
+		<div style="margin-top:3em">
+			<form action="https://formsubmit.co/contact@hopscotchpub.com" method="POST" id="contact-form">
+		     <input type="hidden" name="_subject" value="Formulaire de contact hopscotchpub.com">
+		     <input type="hidden" name="_next" value="https://hopscotchpub.com?submitted=1#contact">
+		     <input type="text" name="nom" required="" placeholder="Nom - Prénom" style="margin-bottom: 1em;">
+		     <input type="text" name="telephone" placeholder="Téléphone" style="margin-bottom: 1em;">
+		     <input type="email" name="email" required="" placeholder="Email" style="margin-bottom: 1em;">
+		     <textarea name="message" lines="5" required="" placeholder="Message" style="margin-bottom: 1em;"></textarea>
+		     <button type="submit">Envoyer</button>
+		</form>
+		</div>
+
+		<style type="text/css">
+			#contact-form {
+				display: flex;
+			  	flex-direction: column;
+			  	align-items: center;
+
+			  	> input, > textarea {
+			  		width: 80%;
+			  	}
+			}
+		</style>
+
+		<script type="text/javascript">
+			var queryParams = new URLSearchParams(window.location.search);
+			if (queryParams.get("submitted") === "1") {
+				jQuery("#submitted-confirmation").show();
+			}
+		</script>
+
 				</div>
 						</div>
 					</div>
